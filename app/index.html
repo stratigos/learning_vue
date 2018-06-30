@@ -26,9 +26,25 @@
       <span v-if="seen">Now you see me</span>
     </div>
 
-    <script src="app-intro.js"></script>
-    <script src="app-2.js"></script>
-    <script src="app-3.js"></script>
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <script src="../src/app-intro.js"></script>
+    <script src="../src/app-2.js"></script>
+    <script src="../src/app-3.js"></script>
+    <script src="../src/app-3.js"></script>
+    <script src="../src/app-4.js"></script>
+    <script src="../src/app-5.js"></script>
   </body>
 </html>
 
